@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Mobilenav = () => {
 
     const { t } = useTranslation();
-    
+
     const [wid, setWid] = useState(window.innerWidth);
 
     const [show, setShow] = useState(false);
