@@ -3,9 +3,12 @@ import { style } from './Stylenav'
 import { FaRegUser } from 'react-icons/fa'
 import { AiOutlineMenu, } from 'react-icons/ai'
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useTranslation } from "react-i18next";
 
 const Mobilenav = () => {
 
+    const { t } = useTranslation();
+    
     const [wid, setWid] = useState(window.innerWidth);
 
     const [show, setShow] = useState(false);
@@ -58,7 +61,7 @@ const Mobilenav = () => {
                     <Offcanvas.Body style={styles.offcanvasBody} padd >
                         <hr style={{ width: "100%", padding: '0px', color: "black" }} />
                         <ul style={styles.ul} >
-                            <li>Notification</li>
+                            <li>{t("Notification")}</li>
                             <hr />
                             <li>Sign Up as Astrologer</li>
                             <hr />

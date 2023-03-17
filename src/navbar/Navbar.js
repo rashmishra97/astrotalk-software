@@ -3,7 +3,10 @@ import { style } from './Stylenav'
 import { FaUser } from 'react-icons/fa'
 import Mobilenav from './Mobilenav';
 import Button from 'react-bootstrap/Button';
+import { useTranslation } from "react-i18next";
 const Navbar = () => {
+
+    const { t } = useTranslation();
 
     const [wid, setWid] = useState(window.innerWidth);
     const updateSize = () => {
@@ -27,7 +30,7 @@ const Navbar = () => {
                     <span style={style.text} >Astrotalk</span>
                 </div>
                 <div style={style.login_div} >
-                    <span style={style.login_btn}>Login</span>
+                    <span style={style.login_btn}>{t("Login")}</span>
                     <span style={style.img} >
                         <img src='language_icon.webp' alt='language img' width={60} height='27px'>
                         </img>
