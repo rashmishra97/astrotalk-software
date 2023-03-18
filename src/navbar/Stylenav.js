@@ -4,12 +4,10 @@ export const style = {
         backgroundColor: "white",
         display: "flex",
         margin: 'auto',
-        // alignItems: "center",
         justifyContent: "space-between",
         justifyItems: "center",
         padding: "12px 0",
         maxWidth: "1100px",
-        // border: "1px solid blue",
     },
 
     navbar_logo: {
@@ -19,21 +17,14 @@ export const style = {
         textAlign: "center",
         display: "flex",
         fontSize: "20px",
-        // width: 'auto',
-        // border: "1px solid red",
-        // marginLeft: 20
     },
 
     text: {
         fontSize: "26px",
-        // width: "auto",
-        // border: "1px solid red",
         marginLeft: "15px"
     },
 
     login_div: {
-        // color: "white",
-        // border: "3px solid yellow",
         display: "flex",
     },
 
@@ -46,8 +37,6 @@ export const style = {
         padding: ".5px 30px",
         borderRadius: "25px",
         fontWeight: "50px"
-        // border: "1px solid red"
-
     },
 
     user_icon: {

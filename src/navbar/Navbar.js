@@ -45,4 +45,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-{/* <Button >button</Button> */ }

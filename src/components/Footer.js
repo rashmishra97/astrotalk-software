@@ -12,7 +12,7 @@ const Footer = () => {
                         paddingLeft: "0px"
                     }}
                 >
-                    <h4 style={{ borderBottom: "2px solid yellow", display: "inline-block" }} >CORPORATE Info</h4>
+                    <h4 style={{ borderBottom: "2px solid yellow", display: "inline-block" }} >Corporate Info</h4>
                     <div>
                         <li className="footer-li" style={styles.li} >Refund and Cancellation Policy</li>
                         <li className="footer-li" style={styles.li} >Disclaimer</li>
@@ -80,17 +80,10 @@ const Footer = () => {
                 </div>
 
             </div>
+
             {/* copy right footer */}
-            <div style={styles.copyright_footer
-                // backgroundColor: "#36454F",
-                // padding: "16px 0px", display: "flex",
-                // justifyContent: "center",
-                // alignItems: "center",
-                // textAlign: "center",
-                // color: "white",
-                // fontStyle: "bold"
-            } >
-                <p style={{ margin: "0px" }} >Copyright @ 2023 CodeYeti
+            <div style={styles.copyright_footer} >
+                <p style={{ margin: "0px" }} >Copyright @ 2023 LogixHunt
                     Software Solutions Pvt. Ltd. All Rights Reserved </p>
             </div>
         </ >
@@ -112,7 +105,7 @@ const styles = {
     },
     social_li: {
         display: "flex",
-        justifyContent: "center",
+        // textAlign: "left"
     },
 
     apps: {
@@ -122,6 +115,7 @@ const styles = {
     li: {
         marginTop: "15px",
     },
+
     copyright_footer: {
         backgroundColor: "#36454F",
         padding: "16px 0px", display: "flex",
