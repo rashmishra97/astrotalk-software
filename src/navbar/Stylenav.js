@@ -36,7 +36,9 @@ export const style = {
         boxShadow: "0 6px 20px rgba(56, 125, 255, 0.17)",
         padding: ".5px 30px",
         borderRadius: "25px",
-        fontWeight: "50px"
+        fontWeight: "50px",
+        cursor: "pointer"
+
     },
 
     user_icon: {

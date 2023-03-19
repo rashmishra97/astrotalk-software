@@ -4,9 +4,12 @@ import { FaUser } from 'react-icons/fa'
 import Mobilenav from './Mobilenav';
 import Button from 'react-bootstrap/Button';
 import { useTranslation } from "react-i18next";
+import { Link, useLocation, useNavigate  } from 'react-router-dom';
 const Navbar = () => {
 
     const { t } = useTranslation();
+    const navigate = useNavigate();
+    
 
     const [wid, setWid] = useState(window.innerWidth);
     const updateSize = () => {
@@ -18,9 +21,16 @@ const Navbar = () => {
         window.addEventListener("resize", updateSize)
     }, [])
 
+   const gotoLoginPage =()=>{
+    navigate('/login')
+   }
+
     return (
         wid > 640 ?
             <div style={style.navbar_container}  >
+                 <Link  to={{ 
+            pathname: "/"
+            }}>
                 <div style={style.navbar_logo}  >
                     <img src='astro1.jfif'
                         alt='logo'
@@ -29,7 +39,10 @@ const Navbar = () => {
                     </img>
                     <span style={style.text} >Astrotalk</span>
                 </div>
-                <div style={style.login_div} >
+            </Link>
+                
+           
+                <div style={style.login_div}  onClick={gotoLoginPage}>
                     <span style={style.login_btn}>{t("Login")}</span>
                     <span style={style.img} >
                         <img src='language_icon.webp' alt='language img' width={60} height='27px'>
@@ -39,6 +52,7 @@ const Navbar = () => {
                         <FaUser size={30} />
                     </span>
                 </div>
+               
             </div> : <Mobilenav />
     )
 }
