@@ -7,18 +7,18 @@ function SliderComponent() {
                 <img
                     className="d-block w-100"
                     src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
-                    alt="Image One"
+                    alt="One"
                 />
                 <Carousel.Caption>
-                    <h3></h3>
-                    <p></p>
+                    <h3>dummy text 1</h3>
+                    <p>dummy text 1</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={1500}>
                 <img
                     className="d-block w-100"
                     src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
-                    alt="Image One"
+                    alt="two"
                 />
                 <Carousel.Caption>
                     <h3>Label for first slide</h3>
@@ -29,7 +29,7 @@ function SliderComponent() {
                 <img
                     className="d-block w-100"
                     src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
-                    alt="Image One"
+                    alt="three"
                 />
                 <Carousel.Caption>
                     <h3>Label for second slide</h3>
