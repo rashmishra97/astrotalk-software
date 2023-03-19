@@ -97,7 +97,7 @@ const styles = {
         backgroundColor: 'black',
         display: "flex",
         color: "white",
-        // marginTop: "25px",
+        marginTop: "10px",
         paddingTop: "20px",
         listStyleType: "none",
         paddingLeft: "25px",
