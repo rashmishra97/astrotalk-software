@@ -49,3 +49,15 @@ height:200px;
 .react-multi-carousel-dot-list {
   border:2px solid red !important
 }  */
+
+ .react-multi-carousel-list {
+       position: unset ! important
+   }
+
+   .react-multiple-carousel-arrow-right {
+    right: "20px"
+   }
+
+   .react-multiple-carousel-arrow-left {
+    left: "20px"
+   }

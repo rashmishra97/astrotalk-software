@@ -1,11 +1,12 @@
-import "./App.css";
-import Navbar from "./navbar/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
+import './App.css'
+import Navbar from './navbar/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
 
-import RechargeCheckout from "./RechargeCheckout";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import RechargeCheckout from './RechargeCheckout'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
+import Login from './components/Login'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Footer />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Footer />} />
           <Route path="/terms" element={<Footer />} />
           <Route path="/privacy" element={<Footer />} />
@@ -26,7 +27,7 @@ function App() {
         <Footer />
       </HashRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
