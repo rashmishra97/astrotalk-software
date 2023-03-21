@@ -4,9 +4,12 @@ import { FiPhoneCall } from 'react-icons/fi'
 import { TbVideo } from 'react-icons/tb'
 import { SlBookOpen } from 'react-icons/sl'
 import { useTranslation } from 'react-i18next'
+import { Link, useNavigate } from 'react-router-dom'
 
 function BannerCards() {
   const { t } = useTranslation()
+
+  const nav = useNavigate()
 
   return (
     <div style={styles.card_main_container}>
@@ -17,6 +20,9 @@ function BannerCards() {
             height: '9rem',
             borderRadius: '10px',
           }}
+          onClick={() => {
+            nav('/list')
+          }}
         >
           <HiOutlineChatBubbleLeftRight
             size={45}
@@ -26,6 +32,7 @@ function BannerCards() {
               marginTop: '25px',
             }}
           />
+
           <Card.Body>
             <Card.Text
               style={{
@@ -45,6 +52,9 @@ function BannerCards() {
             width: '18rem',
             height: '9rem',
             borderRadius: '10px',
+          }}
+          onClick={() => {
+            nav('/list')
           }}
         >
           <FiPhoneCall
@@ -69,7 +79,12 @@ function BannerCards() {
       </div>
 
       <div style={styles.card}>
-        <Card style={{ width: '18rem', height: '9rem', borderRadius: '10px' }}>
+        <Card
+          style={{ width: '18rem', height: '9rem', borderRadius: '10px' }}
+          onClick={() => {
+            nav('/list')
+          }}
+        >
           <TbVideo
             size={45}
             style={{

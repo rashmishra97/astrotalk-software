@@ -5,6 +5,7 @@ import TotalScore from '../components/TotalScore'
 import AstrologerCarousel from '../components/AstrologerCarousel'
 import WhyAstrologer from '../components/WhyAstrologer'
 import FAQ from '../components/FAQ'
+import AstrologersList from '../components/AstrologersList'
 
 function HomePage() {
   return (

@@ -32,8 +32,6 @@ const styles = {
     background: 'linear-gradient(#f0df20,#000000de)',
     flexWrap: 'wrap',
     color: 'white',
-    border: '1px solid red',
-    // margin: 'auto',
   },
 
   ul_container: {
@@ -41,7 +39,6 @@ const styles = {
     fontWeight: 700,
     fontSize: 30,
     padding: '10px 10px',
-    border: '1px solid blue',
     marginRight: 20,
   },
 

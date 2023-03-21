@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import RechargeCheckout from './RechargeCheckout'
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Login from './components/Login'
+import AstroList from './pages/AstroList'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/forgotPassword" element={<Footer />} />
           <Route path="/changePassword" element={<Footer />} />
           <Route path="/recharge" element={<RechargeCheckout />} />
+          <Route path="/list" element={<AstroList />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
         <Footer />
