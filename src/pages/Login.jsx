@@ -17,9 +17,6 @@ function Login() {
   const [Password, setPassword] = useState();
   const [email, setemail] = useState();
 
-
-
-
   const googleLogin = () => {
     auth().signInWithPopup(googleAuthProvider).then((result) => {
       // This gives you a Google Access Token. You can use it to access the Google API.
