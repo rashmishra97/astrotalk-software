@@ -26,12 +26,13 @@ export default TotalScore
 const styles = {
   container: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     listStyleType: 'none',
     padding: '16px 0px',
     background: 'linear-gradient(#f0df20,#000000de)',
     flexWrap: 'wrap',
     color: 'white',
+    border: '1px solid red',
     // margin: 'auto',
   },
 
@@ -40,7 +41,8 @@ const styles = {
     fontWeight: 700,
     fontSize: 30,
     padding: '10px 10px',
-    marginLeft: 60,
+    border: '1px solid blue',
+    marginRight: 20,
   },
 
   li_container: {
