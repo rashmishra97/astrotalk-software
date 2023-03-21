@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import { useTranslation } from 'react-i18next'
 
@@ -35,7 +34,7 @@ function LanguageSelector(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
