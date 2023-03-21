@@ -61,3 +61,8 @@ height:200px;
    .react-multiple-carousel-arrow-left {
     left: "20px"
    }
+
+   input[type=radio] {
+    height: 1em;
+    width:1em;
+}
