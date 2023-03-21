@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <LanguageSelector show={modalShow} onHide={() => setModalShow(false)} />
+      {/* <LanguageSelector show={modalShow} onHide={() => setModalShow(false)} /> */}
 
       <div style={style.login_div}>
         <span style={style.login_btn} onClick={gotoLoginPage}>

@@ -1,12 +1,15 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const FAQ = () => {
+  const { t } = useTranslation()
+
   return (
     <div style={styles.container}>
-      <h4 style={{ textAlign: 'center' }}>FAQ'S ABOUT ASTROLOGY</h4>
+      <h4 style={{ textAlign: 'center' }}>{t("FAQ'S ABOUT ASTROLOGY")}</h4>
       <h6 style={{ textAlign: 'center' }}>
         {' '}
-        ------ Why is Astrology So Accurate ? -----
+        ------ {t('Why is Astrology So Accurate')} ? -----
       </h6>
       <div style={styles.text}>
         <p>

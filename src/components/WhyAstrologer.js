@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const WhyAstrologer = () => {
+  const { t } = useTranslation()
+
   return (
     <div
       style={{
@@ -8,10 +11,10 @@ const WhyAstrologer = () => {
       }}
     >
       <div style={styles.container}>
-        <h4 style={{ textAlign: 'center' }}>WHY ASTROLOGY ?</h4>
+        <h4 style={{ textAlign: 'center' }}>{t('WHY ASTROLOGY ?')}</h4>
         <h6 style={{ textAlign: 'center' }}>
           {' '}
-          Astrology reveals the will of the god
+          {t('Astrology reveals the will of the god')}
         </h6>
         <div style={styles.text}>
           <p>
