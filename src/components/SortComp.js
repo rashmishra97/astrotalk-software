@@ -16,37 +16,46 @@ const SortComp = (props) => {
           <Modal.Title id="contained-modal-title-vcenter">SORT BY</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Popularity</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Experience : High to Low</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Experience : Low to High</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Total orders : High to Low</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Total orders : Low to High</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Price : High to Low</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Price : Low to High</label>
-          </div>
-          <div>
-            <input type="radio" name="radio" />
-            <label>Rating : High to Low</label>
+          <div style={styles.container}>
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Popularity</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Experience : High to Low</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Experience : Low to High</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Total orders : High to Low</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Total orders : Low to High</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Price : High to Low</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Price : Low to High</label>
+            </div>
+
+            <div style={styles.div_container}>
+              <input type="radio" name="radio" style={styles.inpt} />
+              <label style={styles.labl}>Rating : High to Low</label>
+            </div>
           </div>
         </Modal.Body>
       </Modal>
@@ -55,3 +64,21 @@ const SortComp = (props) => {
 }
 
 export default SortComp
+
+const styles = {
+  container: {
+    margin: '5px 5px',
+    color: 'black',
+  },
+  div_container: {
+    margin: '5px 2px',
+    // border: '1px solid blue',
+  },
+  inpt: {
+    paddingLeft: 10,
+    border: '1px solid red',
+  },
+  labl: {
+    paddingLeft: '10px',
+  },
+}

@@ -8,7 +8,7 @@ import LanguageSelector from '../components/LanguageSelector'
 
 const Mobilenav = () => {
   const { t } = useTranslation()
-  const [modalShow, setModalShow] = React.useState(true)
+  const [modalShow, setModalShow] = React.useState(false)
 
   const [wid, setWid] = useState(window.innerWidth)
 
@@ -55,13 +55,16 @@ const Mobilenav = () => {
             alt="language img"
             width={50}
             height="20px"
+            onClick={() => {
+              setModalShow(true)
+            }}
           ></img>
         </span>
         <span style={{ ...style.user_icon, marginRight: '0px' }}>
           <FaRegUser size={20} style={{ marginRight: '0px' }} />
         </span>
       </div>
-      <div style={{ backgroun: '#D3D3D3' }}>
+      <div>
         <Offcanvas
           show={show}
           onHide={handleClose}
