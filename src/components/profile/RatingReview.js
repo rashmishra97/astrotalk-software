@@ -1,16 +1,15 @@
 import React from 'react'
-import ConsultantsAvailability from './ConsultantsAvailability'
 import { FaUser } from 'react-icons/fa'
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import Consultants from './Consultants'
 
 const RatingReview = () => {
   return (
     <div
       style={{
-        // border: '1px solid blue',
         display: 'flex',
         justifyContent: 'center',
-        maxWidth: '1090px',
+        maxWidth: '1100px',
         margin: 'auto',
         flexWrap: 'wrap',
       }}
@@ -24,7 +23,7 @@ const RatingReview = () => {
             justifyContent: 'space-between',
             borderRadius: '5px',
             flexWrap: 'wrap',
-            margin: '0px 5px',
+            margin: '0px 14px 0px 5px',
           }}
         >
           <h4
@@ -186,7 +185,7 @@ const RatingReview = () => {
 
         <div
           style={{
-            margin: '10px 5px',
+            margin: '20px 12px 10px 5px',
             boxShadow: '0px 0px 2px 1px #616161',
             borderRadius: 10,
             padding: '10px',
@@ -198,7 +197,7 @@ const RatingReview = () => {
               fontWeight: '600px',
               textAlign: 'left',
               color: '#454545',
-              marginBottom: '10px',
+              marginBottom: '14px',
             }}
           >
             User Reviews
@@ -406,8 +405,8 @@ const RatingReview = () => {
         </div>
       </div>
 
-      <div style={{ border: '1px solid red', width: 538, margin: '0px 5px' }}>
-        <ConsultantsAvailability />
+      <div style={{ width: 538, margin: '0px 5px 0px 8px' }}>
+        <Consultants />
       </div>
     </div>
   )
