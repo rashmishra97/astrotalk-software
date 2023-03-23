@@ -156,7 +156,7 @@ const AstroFilter = (props) => {
                     </div>
                     <div style={styles.sub_container}>
                       <input type="radio" name="radio" />
-                      <label style={styles.labl}>Not Active</label>
+                      <label style={styles.labl}>Not Active </label>
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
@@ -168,6 +168,7 @@ const AstroFilter = (props) => {
     </div>
   )
 }
+// ★
 
 export default AstroFilter
 

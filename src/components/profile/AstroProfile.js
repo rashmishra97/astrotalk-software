@@ -10,6 +10,7 @@ const AstroProfile = () => {
         maxWidth: '1110px',
         margin: 'auto',
         flexWrap: 'wrap',
+        // border: '3px solid green',
       }}
     >
       <div style={styles.card_main}>

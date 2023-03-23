@@ -3,6 +3,7 @@ import { Breadcrumb, Button, Form, InputGroup } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import SortComp from './SortComp'
 import { CiSearch } from 'react-icons/ci'
+import { AiFillHome } from 'react-icons/ai'
 import AstroFilter from './AstroFilter'
 
 const AstrologersList = () => {
@@ -35,7 +36,6 @@ const AstrologersList = () => {
             marginBottom: '10px',
             maxWidth: '1138px',
             marginLeft: '28px',
-            // minWidth: ''
           }}
         >
           {modalShow && (
@@ -49,10 +49,17 @@ const AstrologersList = () => {
           )}
           <div>
             <Breadcrumb>
-              <Breadcrumb.Item href="http://localhost:3000">
-                Home
+              <Breadcrumb.Item href="http://localhost:3000" active="false">
+                <AiFillHome
+                  style={{ paddingRight: '2', paddingBottom: 2 }}
+                  color="black"
+                  size={16}
+                />
+                <span style={{ color: 'black' }}>Home</span>
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="#">Astrologers</Breadcrumb.Item>
+              <Breadcrumb.Item href="#" active="false">
+                <span style={{ color: 'black' }}>Astrologers</span>
+              </Breadcrumb.Item>
             </Breadcrumb>
           </div>
           <span>Available balance: ₹ 0</span>
@@ -89,7 +96,13 @@ const AstrologersList = () => {
               Sort by
             </Button>
 
-            <InputGroup style={{ maxWidth: 220, height: 50, marginBottom: 0 }}>
+            <InputGroup
+              style={{
+                maxWidth: 220,
+                height: 50,
+                marginBottom: 0,
+              }}
+            >
               <Form.Control
                 size="md"
                 placeholder="Search by..."
@@ -98,9 +111,11 @@ const AstrologersList = () => {
               <CiSearch
                 color="#616161"
                 style={{
-                  float: 'right',
-                  margin: '15px 2px',
+                  position: 'absolute',
+                  right: 10,
+                  top: 10,
                 }}
+                size={22}
               />
             </InputGroup>
           </div>

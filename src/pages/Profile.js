@@ -1,12 +1,12 @@
 import React from 'react'
 import AstroProfile from '../components/profile/AstroProfile'
-import RatingConsultant from '../components/profile/RatingConsultant'
+import RatingReview from '../components/profile/RatingReview'
 
 const Profile = () => {
   return (
     <div>
       <AstroProfile />
-      {/* <RatingConsultant /> */}
+      <RatingReview />
     </div>
   )
 }

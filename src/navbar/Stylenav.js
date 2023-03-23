@@ -7,6 +7,7 @@ export const style = {
     justifyItems: 'center',
     padding: '12px 0',
     maxWidth: '1100px',
+    textDecoration: 'none',
   },
 
   navbar_logo: {
