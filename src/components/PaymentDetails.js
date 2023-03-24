@@ -1,6 +1,5 @@
 import React from 'react'
 import { Breadcrumb } from 'react-bootstrap'
-import { AiFillHome } from 'react-icons/ai'
 
 const PaymentDetails = () => {
   return (

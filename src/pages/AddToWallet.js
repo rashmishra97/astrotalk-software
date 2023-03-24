@@ -8,7 +8,7 @@ const AddToWallet = () => {
 
   return (
     <div>
-      <div style={{ background: '#eee', width: '1104px', margin: 'auto' }}>
+      <div style={{ background: '#eee', maxWidth: '1104px', margin: 'auto' }}>
         <Breadcrumb>
           <Breadcrumb.Item href="http://localhost:3000/#/list" active="true">
             <AiFillHome
@@ -28,8 +28,7 @@ const AddToWallet = () => {
       </div>
       <div
         style={{
-          width: '1104px',
-          // border: '1px solid red',
+          maxWidth: 1104,
           textAlign: 'center',
           margin: 'auto',
         }}
@@ -51,6 +50,7 @@ const AddToWallet = () => {
             fontSize: 21,
             color: 'black',
             textAlign: 'left',
+            marginLeft: 20,
           }}
         >
           Popular Recharge
@@ -58,137 +58,452 @@ const AddToWallet = () => {
 
         {/* card div */}
         <div
-          onClick={() => {
-            navigate('/paymentdetails')
-          }}
           style={{
             display: 'flex',
             flexWrap: 'wrap',
-            border: '2px solid violet',
-            maxWidth: '100%',
-            marginBottom: '25px',
+            // maxWidth: '100%',
+            margin: '20px 0px',
+            // border: '1px solid red',
           }}
         >
-          <div className="col-md-4" style={{ border: '1px solid red' }}>
-            1
-          </div>
           <div
-            className="col-md-4"
-            // style={{
-            //   maxWidth: 184,
-            //   border: '1px solid red',
-            //   padding: "20px 20px"
-            // }}
-          >
-            2
-          </div>
-          <div
-            className="col-md-4"
-            // style={{
-            //   maxWidth: 184,
-            //   border: '1px solid red',
-            //   padding: "20px 20px"
-            // }}
-          >
-            3
-          </div>
-          <div
+            onClick={() => {
+              navigate('/paymentdetails')
+            }}
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
+              width: '14%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            4
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              cursor: 'pointer',
             }}
           >
-            5
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            6
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            7
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              cursor: 'pointer',
             }}
           >
-            8
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            9
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            10
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            11
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            12
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
+
           <div
             style={{
-              maxWidth: 184,
-              border: '1px solid red',
-              padding: '20px 30px',
-              margin: '0px 10px',
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
             }}
           >
-            13
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
+            }}
+          >
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
+            }}
+          >
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
+            }}
+          >
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 50
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
           </div>
         </div>
         {/* Crad end */}
