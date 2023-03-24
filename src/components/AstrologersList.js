@@ -74,7 +74,7 @@ const AstrologersList = () => {
             <Button
               variant="outline-success"
               style={{ width: '100px' }}
-              onClick={() => nav('/recharge')}
+              onClick={() => nav('/addtowallet')}
             >
               Recharge
             </Button>
