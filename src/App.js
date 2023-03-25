@@ -9,7 +9,9 @@ import Login from './components/Login'
 import AstroList from './pages/AstroList'
 import Profile from './pages/Profile'
 import AddToWallet from './pages/AddToWallet'
-import PaymentDetails from './components/PaymentDetails'
+import WalletTransaction from './pages/WalletTransaction'
+import PaymentLogs from './components/PaymentLogs'
+import PaymentDetails from './pages/PaymentDetails'
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/list" element={<AstroList />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/paymentdetails" element={<PaymentDetails />} />
+          <Route path="/transaction" element={<WalletTransaction />} />
+          <Route path="/paymentlogs" element={<PaymentLogs />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
         <Footer />

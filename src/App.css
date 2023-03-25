@@ -66,3 +66,13 @@ height:200px;
     height: 1em;
     width:1em;
 }
+
+.tooltip-inner {
+background-color: white;
+padding-top: 0
+
+}
+
+.tooltip-arrow  {
+  left: 0
+}

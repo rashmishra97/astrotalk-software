@@ -118,7 +118,107 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
+              ₹ 100
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
+            }}
+          >
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 200
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: '14%',
+              // minWidth: '28%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              // flexGrow: '1',
+              cursor: 'pointer',
+            }}
+          >
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 500
+            </div>
+            <div
+              style={{
+                background: '#2197541a',
+                color: '#219653',
+                fontSize: 14,
+                float: '',
+                padding: '6px 0px',
+              }}
+            >
+              {' '}
+              50 Extra
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: '14%',
+              margin: '10px 5px  10px 20px',
+              boxShadow: '0px 0px 3px 1px #616161',
+              borderRadius: '8px',
+              cursor: 'pointer',
+            }}
+          >
+            <div
+              style={{
+                padding: '18px 0px 5px 0px',
+                fontWeight: 600,
+                fontSize: 16,
+              }}
+            >
+              ₹ 1000
             </div>
             <div
               style={{
@@ -186,39 +286,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
-            </div>
-            <div
-              style={{
-                background: '#2197541a',
-                color: '#219653',
-                fontSize: 14,
-                float: '',
-                padding: '6px 0px',
-              }}
-            >
-              {' '}
-              50 Extra
-            </div>
-          </div>
-
-          <div
-            style={{
-              width: '14%',
-              margin: '10px 5px  10px 20px',
-              boxShadow: '0px 0px 3px 1px #616161',
-              borderRadius: '8px',
-              cursor: 'pointer',
-            }}
-          >
-            <div
-              style={{
-                padding: '18px 0px 5px 0px',
-                fontWeight: 600,
-                fontSize: 16,
-              }}
-            >
-              ₹ 50
+              ₹ 2000
             </div>
             <div
               style={{
@@ -252,7 +320,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
+              ₹ 3000
             </div>
             <div
               style={{
@@ -286,7 +354,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
+              ₹ 4000
             </div>
             <div
               style={{
@@ -320,7 +388,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
+              ₹ 8000
             </div>
             <div
               style={{
@@ -354,7 +422,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
+              ₹ 15000
             </div>
             <div
               style={{
@@ -388,7 +456,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
+              ₹ 20000
             </div>
             <div
               style={{
@@ -422,75 +490,7 @@ const AddToWallet = () => {
                 fontSize: 16,
               }}
             >
-              ₹ 50
-            </div>
-            <div
-              style={{
-                background: '#2197541a',
-                color: '#219653',
-                fontSize: 14,
-                float: '',
-                padding: '6px 0px',
-              }}
-            >
-              {' '}
-              50 Extra
-            </div>
-          </div>
-
-          <div
-            style={{
-              width: '14%',
-              // minWidth: '28%',
-              margin: '10px 5px  10px 20px',
-              boxShadow: '0px 0px 3px 1px #616161',
-              borderRadius: '8px',
-              // flexGrow: '1',
-              cursor: 'pointer',
-            }}
-          >
-            <div
-              style={{
-                padding: '18px 0px 5px 0px',
-                fontWeight: 600,
-                fontSize: 16,
-              }}
-            >
-              ₹ 50
-            </div>
-            <div
-              style={{
-                background: '#2197541a',
-                color: '#219653',
-                fontSize: 14,
-                float: '',
-                padding: '6px 0px',
-              }}
-            >
-              {' '}
-              50 Extra
-            </div>
-          </div>
-
-          <div
-            style={{
-              width: '14%',
-              // minWidth: '28%',
-              margin: '10px 5px  10px 20px',
-              boxShadow: '0px 0px 3px 1px #616161',
-              borderRadius: '8px',
-              // flexGrow: '1',
-              cursor: 'pointer',
-            }}
-          >
-            <div
-              style={{
-                padding: '18px 0px 5px 0px',
-                fontWeight: 600,
-                fontSize: 16,
-              }}
-            >
-              ₹ 50
+              ₹ 50000
             </div>
             <div
               style={{

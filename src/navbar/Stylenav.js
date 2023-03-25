@@ -42,7 +42,7 @@ export const style = {
 
   user_icon: {
     display: 'flex',
-    alignItems: 'center',
+    justifyContent: 'center',
     margin: '0 15px',
     color: 'darkgray',
   },
