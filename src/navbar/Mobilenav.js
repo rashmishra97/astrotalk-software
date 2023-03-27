@@ -10,21 +10,10 @@ const Mobilenav = () => {
   const { t } = useTranslation()
   const [modalShow, setModalShow] = React.useState(false)
 
-  const [wid, setWid] = useState(window.innerWidth)
-
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
-
-  const updateSize = () => {
-    setWid(window.innerWidth)
-    console.log(wid, window.innerWidth, 'wiiiiiid')
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', updateSize)
-  }, [])
 
   return (
     <div style={{ ...style.navbar_container, justifyContent: 'space-between' }}>
@@ -64,6 +53,7 @@ const Mobilenav = () => {
           <FaRegUser size={20} style={{ marginRight: '0px' }} />
         </span>
       </div>
+
       <div>
         <Offcanvas
           show={show}

@@ -53,5 +53,6 @@ export const style = {
     alignItems: 'center',
     margin: '0 15px',
     cursor: 'pointer',
+    // border: '1px solid red',
   },
 }

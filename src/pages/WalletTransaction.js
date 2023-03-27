@@ -1,11 +1,23 @@
+import React, { useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { useNavigate } from 'react-router-dom'
 import PaymentLogs from '../components/PaymentLogs'
 import { MdDeleteForever } from 'react-icons/md'
+import MobilePaymentLogs from '../components/MobilePaymentLogs'
 
 function WalletTransaction() {
+  const [windowSize, setWindowSize] = React.useState(window.innerWidth)
+
+  const updateWindowSize = () => {
+    setWindowSize(window.innerWidth)
+    console.log('windiw size h', windowSize)
+  }
+  useEffect(() => {
+    window.addEventListener('resize', updateWindowSize)
+  }, [])
+
   const nav = useNavigate()
 
   return (
@@ -140,15 +152,22 @@ function WalletTransaction() {
           </Tab>
 
           {/* Tab for Payment Logs */}
-          <Tab
-            eventKey="paymentlogs"
-            title="Payment Logs"
-            // onClick={() => {
-            //   nav('/paymentlogs')
-            // }}
-          >
-            <PaymentLogs />
-          </Tab>
+
+          {windowSize > 700 ? (
+            <Tab
+              eventKey="paymentlogs"
+              title="Payment Logs"
+              // onClick={() => {
+              //   nav('/paymentlogs')
+              // }}
+            >
+              <PaymentLogs />
+            </Tab>
+          ) : (
+            <Tab eventKey="paymentlogs" title="Payment Logs">
+              <MobilePaymentLogs />
+            </Tab>
+          )}
         </Tabs>
       </div>
     </div>

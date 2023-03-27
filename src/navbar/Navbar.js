@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import { style } from './Stylenav'
 import { FaUser } from 'react-icons/fa'
 import Mobilenav from './Mobilenav'
-import Button from 'react-bootstrap/Button'
 import { useTranslation } from 'react-i18next'
 import { Link, useNavigate } from 'react-router-dom'
 import LanguageSelector from '../components/LanguageSelector'
@@ -21,7 +20,6 @@ const Navbar = () => {
   const [wid, setWid] = useState(window.innerWidth)
   const updateSize = () => {
     setWid(window.innerWidth)
-    console.log(wid, window.innerWidth, 'wiiiiiid')
   }
 
   useEffect(() => {
@@ -55,6 +53,7 @@ const Navbar = () => {
         <span style={style.login_btn} onClick={gotoLoginPage}>
           {t('Login')}
         </span>
+
         <span style={style.img}>
           <img
             src="language_icon.webp"
@@ -68,33 +67,83 @@ const Navbar = () => {
         <div style={{ position: 'relative' }}>
           <Overlay
             target={target.current}
-            // trigger="focus"
             show={show}
-            placement="bottom"
+            placement="bottom-end"
             overlay={
               <Tooltip
                 id="overlay-example"
                 color="blue"
+                aria-flowto="left"
+                // onTouchCancel="true"
                 style={{
-                  paddingTop: 15,
-                  margin: 0,
-                  // border: '1px solid red',
-                  background: 'white',
-                  marginTop: 3,
+                  position: 'relative',
+                  zIndex: '999',
+                  right: 0,
+                  marginTop: 15,
+                  border: '2px soild red',
                 }}
               >
                 <div
                   style={{
-                    color: 'black',
-                    borderRadius: 3,
                     cursor: 'pointer',
-                    background: 'white',
-                    padding: '8px 12px',
-                    fontSize: 16,
+                    fontSize: 17,
+                    color: '#616161',
+                    borderRadius: 7,
+                    position: 'relative',
+                    zIndex: '999',
+                    width: '280px',
+                    minWidth: 'auto',
+                    boxShadow: '0px 0px 3px .5px #616161',
+                    padding: '5px 10px 20px 10px',
+                    listStyleType: 'none',
                   }}
                 >
-                  <div onClick={() => navigate('/transaction')}>
-                    Wallet Transaction
+                  <li>
+                    <img
+                      src="https://aws.astrotalk.com/assets/images/astrolger/profile_pic.png"
+                      alt="profile"
+                      width="85"
+                      height=""
+                      style={{
+                        borderRadius: '50%',
+                        margin: '5px 10px 12px 10px',
+                        alignItems: 'center',
+                      }}
+                    ></img>
+                  </li>
+                  <hr />
+                  <div style={{ textAlign: 'left', padding: '10px 0px' }}>
+                    <li>
+                      <Link
+                        to="/"
+                        style={{
+                          textDecoration: 'none',
+                          color: '#616161',
+                          padding: '5px 0px',
+                        }}
+                      >
+                        Notification
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/transaction"
+                        style={{
+                          textDecoration: 'none',
+                          justifyContent: 'space-between',
+                          display: 'flex',
+                          padding: '5px 0px',
+                          color: '#616161',
+                        }}
+                        onClick={() => setShow(false)}
+                      >
+                        <div>Wallet Transaction</div>
+                        <div>₹ 0</div>
+                      </Link>
+                    </li>
+
+                    <li>Logout</li>
                   </div>
                 </div>
               </Tooltip>

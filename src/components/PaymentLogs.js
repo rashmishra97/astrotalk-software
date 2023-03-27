@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import { MdDeleteForever } from 'react-icons/md'
 
 const PaymentLogs = () => {
   const nav = useNavigate()
-  console.log('payment log')
 
   return (
-    <div style={{ border: '0px solid red' }}>
+    <div>
       <h2 style={{ textAlign: 'center' }}>Transaction</h2>
 
       <div

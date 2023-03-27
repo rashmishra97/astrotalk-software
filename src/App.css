@@ -68,11 +68,17 @@ height:200px;
 }
 
 .tooltip-inner {
-background-color: white;
-padding-top: 0
-
+background-color: white ! important;
+padding: 0 !important ;
+text-align: left;
+margin: 0;
+max-width: 280px !important; 
+right: 0
 }
 
-.tooltip-arrow  {
-  left: 0
+.tooltip .tooltip-arrow::before {
+  /* position: absolute; */
+  border-color: transparent;
+  border: '1px solid red';
+  visibility: hidden;
 }
