@@ -14,6 +14,7 @@ import PaymentDetails from './pages/PaymentDetails'
 import AstrologerDetail from './pages/AstrologerDetail'
 import UserProfile from './pages/UserProfile'
 import OrderHistory from './pages/OrderHistory'
+import UserEditProfile from './pages/UserEditProfile'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/transaction" element={<WalletTransaction />} />
           <Route path="/paymentlogs" element={<PaymentLogs />} />
           <Route path="/userProfile" element={<UserProfile />} />
+          <Route path="/userEditProfile" element={<UserEditProfile />} />
           <Route path="/orderHistory" element={<OrderHistory />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
