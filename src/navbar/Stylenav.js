@@ -45,6 +45,7 @@ export const style = {
     justifyContent: 'center',
     margin: '0 15px',
     color: 'darkgray',
+    marginRight: '0px',
   },
 
   img: {

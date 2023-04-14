@@ -202,7 +202,6 @@ const styles = {
     maxWidth: '320px',
     margin: 'auto',
     textAlign: 'center',
-    // border: '1px solid blue',
     height: 340,
     borderRadius: 10,
     marginLeft: 22,
@@ -210,13 +209,7 @@ const styles = {
     backgroundColor: 'white',
   },
 
-  // h5: {
-  //     margin: "90px 10px",
-  //     color: 'yellow'
-  // },
-
   desc: {
     margin: '18px 10px',
-    // border: "1px solid red"
   },
 }

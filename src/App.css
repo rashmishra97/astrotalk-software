@@ -82,3 +82,9 @@ right: 0
   border: '1px solid red';
   visibility: hidden;
 }
+
+@media only screen and (max-width: 950px){
+  .order-history-container{
+    justify-content: center;
+  }
+}

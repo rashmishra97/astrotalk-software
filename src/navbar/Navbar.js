@@ -65,7 +65,7 @@ const Navbar = () => {
         </span>
 
         <div style={{ position: 'relative' }}>
-          <Overlay
+          <Overlay 
             target={target.current}
             show={show}
             placement="bottom-end"
@@ -74,23 +74,24 @@ const Navbar = () => {
                 id="overlay-example"
                 color="blue"
                 aria-flowto="left"
-                // onTouchCancel="true"
+                onTouchCancel="true"
                 style={{
                   position: 'relative',
-                  zIndex: '999',
+                  // zIndex: 1,
                   right: 0,
                   marginTop: 15,
-                  border: '2px soild red',
+                // border: '2px solid red'
                 }}
               >
                 <div
                   style={{
+                    // border: '3px solid blue',
                     cursor: 'pointer',
                     fontSize: 17,
                     color: '#616161',
                     borderRadius: 7,
                     position: 'relative',
-                    zIndex: '999',
+                    zIndex: 999,
                     width: '280px',
                     minWidth: 'auto',
                     boxShadow: '0px 0px 3px .5px #616161',
@@ -98,8 +99,10 @@ const Navbar = () => {
                     listStyleType: 'none',
                   }}
                 >
-                  <li>
-                    <img
+                  <li  
+                  onClick={()=>setShow(false)} 
+                  >
+                    <img onClick={()=>navigate('/userProfile')}
                       src="https://aws.astrotalk.com/assets/images/astrolger/profile_pic.png"
                       alt="profile"
                       width="85"
@@ -108,9 +111,10 @@ const Navbar = () => {
                         borderRadius: '50%',
                         margin: '5px 10px 12px 10px',
                         alignItems: 'center',
-                      }}
+                      }} 
                     ></img>
                   </li>
+
                   <hr />
                   <div style={{ textAlign: 'left', padding: '10px 0px' }}>
                     <li>
@@ -120,7 +124,7 @@ const Navbar = () => {
                           textDecoration: 'none',
                           color: '#616161',
                           padding: '5px 0px',
-                        }}
+                        }}  onClick={()=> setShow() }
                       >
                         Notification
                       </Link>
@@ -142,6 +146,12 @@ const Navbar = () => {
                         <div>₹ 0</div>
                       </Link>
                     </li>
+                    
+                      <li>
+                        <Link  to='/orderHistory' style={{textDecoration: 'none', color: '#616161',}}  onClick={() => setShow(false)} > 
+                        Order History
+                        </Link>
+                        </li>
 
                     <li>Logout</li>
                   </div>

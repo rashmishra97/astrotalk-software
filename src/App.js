@@ -7,11 +7,13 @@ import HomePage from './pages/HomePage'
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Login from './components/Login'
 import AstroList from './pages/AstroList'
-import Profile from './pages/Profile'
 import AddToWallet from './pages/AddToWallet'
 import WalletTransaction from './pages/WalletTransaction'
 import PaymentLogs from './components/PaymentLogs'
 import PaymentDetails from './pages/PaymentDetails'
+import AstrologerDetail from './pages/AstrologerDetail'
+import UserProfile from './pages/UserProfile'
+import OrderHistory from './pages/OrderHistory'
 
 function App() {
   return (
@@ -28,10 +30,12 @@ function App() {
           <Route path="/changePassword" element={<Footer />} />
           <Route path="/addtowallet" element={<AddToWallet />} />
           <Route path="/list" element={<AstroList />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/astrologerDetail" element={<AstrologerDetail />} />
           <Route path="/paymentdetails" element={<PaymentDetails />} />
           <Route path="/transaction" element={<WalletTransaction />} />
           <Route path="/paymentlogs" element={<PaymentLogs />} />
+          <Route path="/userProfile" element={<UserProfile />} />
+          <Route path="/orderHistory" element={<OrderHistory />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
         <Footer />

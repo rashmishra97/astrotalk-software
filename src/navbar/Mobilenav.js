@@ -5,11 +5,13 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from '../components/LanguageSelector'
+import { useNavigate } from 'react-router-dom'
 
 const Mobilenav = () => {
   const { t } = useTranslation()
   const [modalShow, setModalShow] = React.useState(false)
 
+  const nav = useNavigate()
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
@@ -82,6 +84,16 @@ const Mobilenav = () => {
               <li>Login</li>
               <hr />
               <li>Astromail</li>
+              <hr />
+              <li
+                onClick={() => {
+                  nav('/transaction')
+                }}
+              >
+                Wallet Transaction
+              </li>
+              <hr />
+              <li>Logout</li>
               <hr />
             </ul>
           </Offcanvas.Body>

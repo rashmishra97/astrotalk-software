@@ -2,7 +2,7 @@ import React from 'react'
 import AstroProfile from '../components/profile/AstroProfile'
 import RatingReview from '../components/profile/RatingReview'
 
-const Profile = () => {
+const AstrologerDetail = () => {
   return (
     <div>
       <AstroProfile />
@@ -11,4 +11,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default AstrologerDetail
