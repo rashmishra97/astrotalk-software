@@ -131,7 +131,7 @@ const AstrologersList = () => {
             }}
           >
             {/* Crad div */}
-            <div style={styles.card_main} onClick={() => nav('/profile')}>
+            <div style={styles.card_main} onClick={() => nav('/astrologerDetail')}>
               <div style={styles.card_imgdiv}>
                 <div>
                   <img
@@ -184,7 +184,7 @@ const AstrologersList = () => {
             </div>
             {/* Crad div */}
 
-            <div style={styles.card_main} onClick={() => nav('/profile')}>
+            <div style={styles.card_main} onClick={() => nav('/astrologerDetail')}>
               <div style={styles.card_imgdiv}>
                 <div>
                   <img
@@ -236,7 +236,7 @@ const AstrologersList = () => {
               </div>
             </div>
 
-            <div style={styles.card_main} onClick={() => nav('/profile')}>
+            <div style={styles.card_main} onClick={() => nav('/astrologerDetail')}>
               <div style={styles.card_imgdiv}>
                 <div>
                   <img
@@ -288,6 +288,10 @@ const AstrologersList = () => {
               </div>
             </div>
           </div>
+
+
+
+
           {/* second Horizontal div */}
           <div
             style={{
@@ -453,6 +457,7 @@ const AstrologersList = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         {/* ------------- */}

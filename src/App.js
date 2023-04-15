@@ -15,6 +15,8 @@ import AstrologerDetail from './pages/AstrologerDetail'
 import UserProfile from './pages/UserProfile'
 import OrderHistory from './pages/OrderHistory'
 import UserEditProfile from './pages/UserEditProfile'
+import UserRegister from './pages/UserRegister'
+import Notification from './pages/Notification'
 
 function App() {
   return (
@@ -23,8 +25,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Footer />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/signup" element={<UserRegister />} />
           <Route path="/terms" element={<Footer />} />
           <Route path="/privacy" element={<Footer />} />
           <Route path="/forgotPassword" element={<Footer />} />
@@ -34,10 +36,11 @@ function App() {
           <Route path="/astrologerDetail" element={<AstrologerDetail />} />
           <Route path="/paymentdetails" element={<PaymentDetails />} />
           <Route path="/transaction" element={<WalletTransaction />} />
-          <Route path="/paymentlogs" element={<PaymentLogs />} />
+          {/* <Route path="/paymentlogs" element={<PaymentLogs />} /> */}
           <Route path="/userProfile" element={<UserProfile />} />
           <Route path="/userEditProfile" element={<UserEditProfile />} />
           <Route path="/orderHistory" element={<OrderHistory />} />
+          <Route path="/notification" element={<Notification />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
         <Footer />

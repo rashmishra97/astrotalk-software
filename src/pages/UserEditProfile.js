@@ -5,21 +5,21 @@ const UserEditProfile = () => {
     return (
         <div style={{
             boxShadow: '0px 0px 5px 1px #454545',
-            paddingBottom: 140,
+            paddingBottom: 100,
             paddingTop: 20,
             marginTop: 20
         }} >
 
             <div style={{
-                maxWidth: 900,
+                maxWidth: 850,
                 margin: "30px auto 0px auto",
-                padding: '20px 0px 50px 0px',
+                padding: '20px 0px 35px 0px',
                 justifyContent: 'center',
                 display: 'flex',
                 flexWrap: 'wrap',
                 flexDirection: 'column',
                 alignItems: 'center',
-                borderRadius: 8,
+                borderRadius: 12,
                 boxShadow: '0px 0px 15px 0.5px #dedede'
 
             }}>
@@ -28,9 +28,8 @@ const UserEditProfile = () => {
                     fontSize: 22,
                     fontWeight: 500,
                     textAlign: 'center',
-                    border: '0px solid blue',
-                    // paddingTop: 20,
-                    margin: '5px 0px 30px 0px'
+                    margin: '1px 0px 12px 0px',
+
                 }} >
                     Edit Your Profile
                 </div>
@@ -41,7 +40,7 @@ const UserEditProfile = () => {
                         color: '#616161',
                         borderRadius: 100,
                         border: '3px solid #616161',
-                        padding: '7px 5px'
+                        padding: '4px 5px'
                     }} size='90px' />
                 </div>
 
@@ -52,14 +51,14 @@ const UserEditProfile = () => {
                         margin: "10px 5px 15px 8px",
                         width: '48%',
                         flexDirection: 'column',
-                        border: '0px solid red'
                     }} >
                         <label style={{ margin: " 2px 10px " }} >First Name</label>
-                        <input placeholder=' First name' type='text' style={{
-                            margin: " 2px 10px ",
-                            padding: '8px 12px',
-                            borderRadius: 8
-                        }} ></input>
+                        <input placeholder=' First name' type='text'
+                            style={{
+                                margin: " 2px 10px ",
+                                padding: '8px 12px',
+                                borderRadius: 8,
+                            }} ></input>
                     </div>
                     <div style={{
                         display: 'flex',

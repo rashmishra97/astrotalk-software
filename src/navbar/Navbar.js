@@ -7,12 +7,14 @@ import { Link, useNavigate } from 'react-router-dom'
 import LanguageSelector from '../components/LanguageSelector'
 import Overlay from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
+import Login from '../components/Login'
 
 const Navbar = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
 
   const [show, setShow] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
   const target = useRef(null)
 
   const [modalShow, setModalShow] = React.useState(false)
@@ -26,8 +28,12 @@ const Navbar = () => {
     window.addEventListener('resize', updateSize)
   }, [])
 
-  const gotoLoginPage = () => {
-    navigate('/login')
+  // const gotoLoginPage = () => {
+  //   navigate('/login')
+  // }
+
+  const toggleFunction = (showLogin) => {
+    setShowLogin(showLogin)
   }
 
   return wid > 640 ? (
@@ -48,9 +54,11 @@ const Navbar = () => {
       )} */}
 
       <LanguageSelector show={modalShow} onHide={() => setModalShow(false)} />
+      {showLogin && <Login toggleFunction={toggleFunction} />}
+
 
       <div style={style.login_div}>
-        <span style={style.login_btn} onClick={gotoLoginPage}>
+        <span style={style.login_btn} onClick={() => setShowLogin(true)} >
           {t('Login')}
         </span>
 
@@ -65,7 +73,7 @@ const Navbar = () => {
         </span>
 
         <div style={{ position: 'relative' }}>
-          <Overlay 
+          <Overlay
             target={target.current}
             show={show}
             placement="bottom-end"
@@ -74,13 +82,13 @@ const Navbar = () => {
                 id="overlay-example"
                 color="blue"
                 aria-flowto="left"
-                onTouchCancel="true"
+                // onTouchCancel="true"
                 style={{
                   position: 'relative',
                   // zIndex: 1,
                   right: 0,
                   marginTop: 15,
-                // border: '2px solid red'
+                  // border: '2px solid red'
                 }}
               >
                 <div
@@ -99,10 +107,8 @@ const Navbar = () => {
                     listStyleType: 'none',
                   }}
                 >
-                  <li  
-                  onClick={()=>setShow(false)} 
-                  >
-                    <img onClick={()=>navigate('/userProfile')}
+                  <li onClick={() => setShow()} >
+                    <img onClick={() => navigate('/userProfile')}
                       src="https://aws.astrotalk.com/assets/images/astrolger/profile_pic.png"
                       alt="profile"
                       width="85"
@@ -111,7 +117,8 @@ const Navbar = () => {
                         borderRadius: '50%',
                         margin: '5px 10px 12px 10px',
                         alignItems: 'center',
-                      }} 
+                        cursor: 'pointer',
+                      }}
                     ></img>
                   </li>
 
@@ -119,12 +126,28 @@ const Navbar = () => {
                   <div style={{ textAlign: 'left', padding: '10px 0px' }}>
                     <li>
                       <Link
-                        to="/"
+                        to="/userProfile"
                         style={{
                           textDecoration: 'none',
                           color: '#616161',
                           padding: '5px 0px',
-                        }}  onClick={()=> setShow() }
+                          cursor: 'pointer',
+                        }} onClick={() => setShow()}
+                      >
+                        Profile
+                      </Link>
+                    </li>
+
+
+                    <li>
+                      <Link
+                        to="/notification"
+                        style={{
+                          textDecoration: 'none',
+                          color: '#616161',
+                          padding: '5px 0px',
+                          cursor: 'pointer',
+                        }} onClick={() => setShow()}
                       >
                         Notification
                       </Link>
@@ -139,6 +162,7 @@ const Navbar = () => {
                           display: 'flex',
                           padding: '5px 0px',
                           color: '#616161',
+                          cursor: 'pointer',
                         }}
                         onClick={() => setShow(false)}
                       >
@@ -146,12 +170,12 @@ const Navbar = () => {
                         <div>₹ 0</div>
                       </Link>
                     </li>
-                    
-                      <li>
-                        <Link  to='/orderHistory' style={{textDecoration: 'none', color: '#616161',}}  onClick={() => setShow(false)} > 
+
+                    <li>
+                      <Link to='/orderHistory' style={{ textDecoration: 'none', color: '#616161', }} onClick={() => setShow(false)} >
                         Order History
-                        </Link>
-                        </li>
+                      </Link>
+                    </li>
 
                     <li>Logout</li>
                   </div>
