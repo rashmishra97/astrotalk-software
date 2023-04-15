@@ -52,7 +52,9 @@ const Login = ({ toggleFunction }) => {
         <input type='password' placeholder='Email or Phone no' style={{
           padding: '9px 20px',
           margin: '18px 5px 15px  5px',
-          borderRadius: 8,
+          borderTopStyle: 'hidden',
+          borderLeftStyle: 'hidden',
+          borderRightStyle: 'hidden',
           boxSizing: 'border-box',
           zIndex: 0
         }} />
@@ -62,7 +64,9 @@ const Login = ({ toggleFunction }) => {
         <input type='password' placeholder='Password' style={{
           padding: '9px 20px',
           margin: '5px 5px 15px  5px',
-          borderRadius: 8,
+          borderTopStyle: 'hidden',
+          borderLeftStyle: 'hidden',
+          borderRightStyle: 'hidden'
         }} />
 
         <Link to='' style={{
@@ -92,7 +96,7 @@ const Login = ({ toggleFunction }) => {
           fontSize: 18
         }} >
 
-          <lable>Not a member?
+          <lable>Not a member? &nbsp;
             <Link to='/signup' style={{ textDecoration: 'none' }}
               onClick={() => toggleFunction(false)}  >
               Register Here
