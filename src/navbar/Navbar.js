@@ -191,7 +191,7 @@ const Navbar = () => {
                 marginTop: 10,
               }}
             >
-              <FaUser
+              <FaUser 
                 size={30}
                 onClick={() => setShow(!show)}
                 style={style.user_icon}

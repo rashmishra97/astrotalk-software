@@ -26,7 +26,6 @@ const PaymentDetails = () => {
         </Breadcrumb>
       </div>
 
-      {/* Payment detail main div */}
       <div
         style={{
           maxWidth: 750,
@@ -73,7 +72,7 @@ const PaymentDetails = () => {
                     fontSize: 16,
                   }}
                 >
-                  Recharge Amount
+                  Recharge Amounts
                 </td>
                 <td style={{ textAlign: 'right', paddingRight: 10 }}>
                   ₹ 200.00
@@ -347,7 +346,6 @@ const PaymentDetails = () => {
                 marginBottom: 20,
 
                 width: '48%',
-                // minWidth: '200px',
                 flexGrow: 1,
                 margin: '15px 5px 8px 8px',
                 height: '100px',
