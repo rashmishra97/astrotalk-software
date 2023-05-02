@@ -74,7 +74,7 @@ const PaymentDetails = () => {
                 >
                   Recharge Amounts
                 </td>
-                <td style={{ textAlign: 'right', paddingRight: 10 }}>
+                <td style={{ textAlign: 'right', paddingRight: 11 }}>
                   ₹ 200.00
                 </td>
               </tr>
